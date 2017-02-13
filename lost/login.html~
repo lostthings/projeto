@@ -1,0 +1,76 @@
+<html>
+<head> 
+<title>Página inicial</title>
+
+	 <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css" rel="stylesheet" type="text/css">
+
+
+	<style>
+	
+	a:link{
+		text-decoration: none;		
+	}
+	
+	input[type="submit"] {
+  	font-weight: bold;
+  	padding: 4px 8px;
+  	border:1px solid #ffffff;
+ 	background: #2E8B57;
+  	color:#fff;
+	}
+	
+	</style>
+
+</head>
+
+<body>
+
+<p></p>
+<center>
+<img src="img/desenho.png" width="250px">
+</center>
+
+
+
+
+<center>
+<div>
+
+
+<form name="login" method="post" action="login.php">
+	<table CELLSPACING="15">
+
+	<tr>
+	<td colspan="2" align="center"><img src="img/usuario.jpg" width=70px></td>
+	</tr>
+
+	<tr height=35>
+	<td><b>Usuário:</b></td><td><input type=text name="usuario" placeholder="Digite seu usuário"></td>
+	</tr>
+
+	<tr height=35>
+	<td><b>Senha:</b></td><td><input type=password name="senha" placeholder="Digite sua senha"></td>
+	</tr>
+	
+	<tr height=35>
+	<td><a href="cadastro.html"><font size="2" color="#2E8B57">Cadastre-se</font></a></td><td align="center"><a href="/var/www/html/lost/recuperar.html"><font size="2" color="#2E8B57">Esqueceu a senha?</font></a></td>
+	</tr>
+
+	<tr height=35>
+	<td colspan=2><center><input type="submit" value="Entrar"></center></td>
+	</tr>
+
+	</table>
+</form>
+
+</div>
+</center>
+
+</body>
+
+</html>

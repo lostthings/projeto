@@ -1,0 +1,134 @@
+<html>
+<head>
+<title>Cadastro</title>
+
+	<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css" rel="stylesheet" type="text/css">
+	
+	
+	<script type"text/javascript">
+		
+			function validar(){
+		var senha = cadastro.senha.value;
+		var senha2 = cadastro.senha2.value;
+
+		if(senha2 == "" ){
+		alert('Preencha o campo');
+		cadastro.senha2.focus();
+		return false;
+		}
+	
+		if(senha != senha2){
+		alert('Senhas diferentes');
+	  		cadastro.senha2.focus();
+		return false;	
+		}
+	}
+	
+	</script>
+
+	<style>
+	
+	#cad{
+	background-color: #2E8B57;
+	}
+	a:link{
+		
+	text-decoration: none;
+	color: black;
+	}
+	
+	input[type="submit"] {
+  	font-weight: bold;
+  	padding: 4px 8px;
+  	border:1px solid #ffffff;
+ 	background: #2E8B57;
+  	color:#fff;
+	}
+	
+	input[type="reset"] {
+  	font-weight: bold;
+  	padding: 4px 8px;
+  	border:1px solid #ffffff;
+ 	background: #2E8B57;
+  	color:#fff;
+	}
+	
+	</style>
+
+</head>
+
+<body>
+
+	<center>
+	<h1 id = "cad">Cadastro</h1>
+	</center>
+
+	<center>
+	<div id="login">
+
+
+	<form name="cadastro" method="POST" action="cadastro.php">
+		<table CELLSPACING="10">
+
+	<tr height=35>
+	<td><b>Nome:*</b></td><td><input type="text" name="nome" id="nome" size ="23" placeholder="Digite seu nome" maxlength="30" required></td>
+	</tr>
+
+	<tr height=35>
+	<td><b>Usuário:*</b></td><td><input type="text" name="usuario" id="usuario" size ="23" placeholder="Digite seu nome de usuário" maxlength="10" required></td>
+	</tr>
+
+	<tr height=35>
+	<td><b>Senha:*</b></td><td><input type="password" name="senha" id="senha" size ="23" placeholder="Criar uma senha" minlength=8 required></td>
+	</tr>
+	
+	<tr height=35>
+	<td><b>Confirme sua senha:</b></td><td><input type="password" name="senha2" id="senha2" size ="23" placeholder="Confirme sua senha" minlength=8 required></td>
+	</tr>
+
+	<tr height=35>
+	<td><b>E-mail:*</b></td><td><input type="email" name="email" id="email" size ="23" placeholder="Digite um e-mail valido" required></td>
+	</tr>
+
+	<tr height=35>
+	<td><b>Cidade:*</b></td><td><input type="text" name="cidade" id="cidade" size ="23" placeholder="Digite o nome da sua cidade" required></td>
+	</tr>
+
+	<tr height=35>
+	<td><b>Bairro:*</b></td><td><input type="text" name="bairro" id="bairro" size ="23" placeholder="Digite o nome da seu bairro" required></td>
+	</tr>
+	
+	<tr>
+	<td colspan=2 align=right><font size="2px">(formato: DD-98888-9999)<font></td>
+	</tr>
+
+
+	<tr height=35>
+	<td><b>Telefone:*</b></td><td><input type="tel"  name="telefone" id="telefone" size =23  placeholder="Telefone para contato" required></td>
+	</tr>
+
+	<tr height=35>
+	<td><center><input type="submit" value="Salvar" onclick="return validar()"></center></td><td><center><input type="reset" value="Cancelar" required></center></td>
+	</tr>
+
+	<tr height=35>
+	<th colspan=2><center><a href="/var/www/html/lost/login.html">Fazer Login</a></center></th>
+	</tr>
+		 
+		 
+		
+		</table>
+
+	</form>
+
+	</div>
+	</center>
+
+</body>
+
+</html>
