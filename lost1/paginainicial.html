@@ -18,7 +18,15 @@
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
     display: block
 		   }
-	#documento{
+
+	#objeto{
+	padding: 0.2em;
+    border: 1px solid #CCC;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block
+			}
+
+	#bairro{
 	padding: 0.2em;
     border: 1px solid #CCC;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
@@ -101,14 +109,25 @@
 	  <table border="0">
 	  <form method="post" action="#">
 
-	 <td><font color="#2E8B57">Cidade/Bairro</font></td><td><font color="#2E8B57">Documento/Objeto</font></td>
+	 <td><font color="#2E8B57">Cidade</font></td>
 	 
 	 <tr>
-		<td><input type="text" name="bairro" id="bairro" maxlength="20" required=""></a></td>
-		<td><input type="text" name="cidade" id="cidade" maxlength="20" required=""></a></td>
-		<td><input type="text" name="objeto" id="objeto" maxlength="20" required=""></td>
+		<td><input type="text" name="cidade" id="cidade" maxlength="20"></a></td>
 	</tr>
-     </table>
+	
+	<td><font color="#2E8B57">Bairro</font></td>
+
+	<tr>
+	<td><input type="text" name="bairro" id="bairro" maxlength="20"></a></td>
+	</tr>
+
+	<td><font color="#2E8B57">Objeto</font></td>
+	
+	<tr>		
+		<td><input type="text" name="objeto" id="objeto" maxlength="20"></td>
+	</tr>
+     
+	</table>
 
 	<br><br>
 		
