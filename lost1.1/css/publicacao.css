@@ -1,0 +1,49 @@
+
+    	
+	#descricao{ resize:none; 
+    	padding: 0.2em;
+    	border: 1px solid #CCC;
+    	box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    	display: block
+	  	  } 
+	
+	#cidade{padding: 0.2em;
+    	border: 1px solid #CCC;
+    	box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    	display: block
+	    }
+
+     #bairro{padding: 0.2em;
+    	border: 1px solid #CCC;
+    	box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    	display: block
+	    }
+
+        #telefone{padding: 0.2em;
+    	border: 1px solid #CCC;
+    	box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    	display: block}
+
+    	#encontrado{padding: 0.2em;
+    	border: 1px solid #CCC;
+    	box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    	display: block}
+
+
+	#enviar{
+	font-size: 1.2em;
+    	background: #2E8B57;
+    	border: 0;
+    	margin-bottom: 1em;
+    	color: #FFF;
+    	padding: 0.2em 0.6em;
+    	box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+         }
+
+	#linmenu{
+        
+        background-color: #2E8B57;
+		}
+      
+

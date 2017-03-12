@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+ <html>
+  
+  <head>
+  	<meta charset="UTF-8">
+    <title>Publicação de objetos achados</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"
+    rel="stylesheet" type="text/css">
+    <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css"
+    rel="stylesheet" type="text/css">
+
+    <style type="text/css">
+    	
+	#descricao{ resize:none; 
+    	padding: 0.2em;
+    	border: 1px solid #CCC;
+    	box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    	display: block
+	  	  } 
+	
+	#cidade{padding: 0.2em;
+    	border: 1px solid #CCC;
+    	box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    	display: block
+	    }
+
+     #bairro{padding: 0.2em;
+    	border: 1px solid #CCC;
+    	box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    	display: block
+	    }
+
+        #telefone{padding: 0.2em;
+    	border: 1px solid #CCC;
+    	box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    	display: block}
+
+    	#encontrado{padding: 0.2em;
+    	border: 1px solid #CCC;
+    	box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    	display: block}
+
+	#tb{
+	font-family: italic;
+    	font-size: 1em;
+    	color : #2E8B57;
+	     }
+
+	#enviar{
+	font-size: 1.2em;
+    	background: #2E8B57;
+    	border: 0;
+    	margin-bottom: 1em;
+    	color: #FFF;
+    	padding: 0.2em 0.6em;
+    	box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+         }
+
+	#linmenu{
+        
+        background-color: #2E8B57;
+		}
+      
+    </style>
+
+
+  </head>
+<body>
+
+<div class="navbar navbar-default navbar-static-top" id = "linmenu">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse" id ="linmenu">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><span>Lost Things</span></a>
+        </div>
+        
+        <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+          <ul class="nav navbar-nav navbar-right">
+             
+	    <li class="active">
+              <a href="#" id ="linmenu">Encontrados</a>
+            </li>
+		
+	    <li class="active">
+              <a href="/media/labnoite/Pen Drive/HTML_LOST/teladebusca.html" id ="linmenu">Perdidos</a>
+            </li> 
+
+	    <li class="active">
+              <a href="Dadospessoais.html" id ="linmenu">Dados Pessoais</a>
+            </li>
+
+            <li class="active">
+              <a href="/media/labnoite/Pen Drive/HTML_LOST/login.html" id ="linmenu">Logout</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+<br>
+	<center>
+	<table id="tb">
+		<tr>
+			<td><i>O que você encontrou?</i></td>
+		</tr>
+       <form enctype="multipart/form-data" method="POST" action="objetos.php">
+       <tr>
+       	<td><input type="text" name="objeto" placeholder="O que você encontrou?" id="encontrado" required maxlength="30"></td>
+       </tr>
+		
+		<tr>
+			<td><i>Em que Cidade?</i></td>
+		</tr>	
+
+		<tr>
+			<td><input type="text" name="cidade" placeholder="Informe a sua cidade:" id="cidade" required maxlength="20"></td>
+		</tr>
+
+		<tr>
+		   <td><i>Em que Bairro?</i></td>
+		</tr>
+           
+          <tr>
+			<td><input type="text" name="bairro" placeholder="Informe a seu Bairro:" id="bairro" required maxlength="20"></td>
+		</tr>
+
+		<tr>
+			<td><i>Telefone:</i></td>
+		</tr>
+
+		<tr>
+			<td><input type="text" name="telefone" id="telefone" placeholder="Número do seu celular:" maxlength="12" required></td>
+		</tr>
+
+		<tr>
+		        <td><input type="file" id="imagem" name="imagem"  ></td>
+		</tr>
+		
+		<tr>
+		        <td><i>Descrição:</i>
+		</tr>
+
+                <tr>	
+		  <td><textarea cols ="20" rows ="5" id = "descricao"  name = "descricao" maxlength = "150" placeholder = "Digite aqui a descrição"></textarea></td>
+                </tr>
+
+		<tr>
+		  <td><input type="submit" value="Enviar" id="enviar">
+		</tr>
+
+
+
+</form>
+</table>
+</center>
+</body>
+</html>
